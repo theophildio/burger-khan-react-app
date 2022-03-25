@@ -1,0 +1,9 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.burger-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
