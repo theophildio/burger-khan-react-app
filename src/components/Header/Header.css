@@ -1,0 +1,13 @@
+.header-title {
+  background-color: tomato;
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 45px;
+  border-radius: 8px;
+}
+
+.header-title span {
+  color: #a7ff24;
+}
