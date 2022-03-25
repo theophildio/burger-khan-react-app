@@ -1,0 +1,56 @@
+[
+  {
+    "id": "623dfc38cb1e99f6575b0d57",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger73.jpg",
+    "name": "THE IMPOSSIBLE BEEF",
+    "price": 167
+  },
+  {
+    "id": "623dfc38cb39d2005aba33f3",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger24.jpg",
+    "name": "DOUBLE FATSO BEEF",
+    "price": 190
+  },
+  {
+    "id": "623dfc38365980d86ce2bb6d",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger38.jpg",
+    "name": "THE IMPOSSIBLE CHICKEN",
+    "price": 215
+  },
+  {
+    "id": "623dfc3863900aa34e720ba7",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger14.jpg",
+    "name": "BEEF WITH CHEESE",
+    "price": 357
+  },
+  {
+    "id": "623dfc38bbfe539db5211179",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger70.jpg",
+    "name": "LOADED SAUSAGE CHICKEN",
+    "price": 296
+  },
+  {
+    "id": "623dfc388666ed9716453018",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger86.jpg",
+    "name": "DOUBLE FATSO CHICKEN",
+    "price": 176
+  },
+  {
+    "id": "623dfc382db81ee1b77ea21c",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger43.jpg",
+    "name": "CLASSIC BEEF",
+    "price": 298
+  },
+  {
+    "id": "623dfc38604a2b9d9cc370ba",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger79.jpg",
+    "name": "FOLDED CHEESE",
+    "price": 297
+  },
+  {
+    "id": "623dfc38de92e4dd8f49d892",
+    "picture": "https://foodish-api.herokuapp.com/images/burger/burger4.jpg",
+    "name": "ORIGINAL BBQ BEEF",
+    "price": 388
+  }
+]
