@@ -19,13 +19,31 @@ const Shop = () => {
     const itemAddedCart = cart.filter(addItem => addItem !== product)
     const newCart = [...itemAddedCart, product];
     if (newCart.length > 4) {
-      alert('Sorry! You have added 4 Burgers already.');
+      alert('Sorry! You have added 4 items already.');
       return
     }
     setCart(newCart);
   }
+
   const deleteItem = () => {
-    setCart([]);
+    if (cart.length === 0) {
+      alert('Oops! Cart is empty.');
+      return;
+    }
+    else {
+      setCart([]);
+    }  
+  }
+
+  const getRandomItem = () => {
+    if (cart.length === 0) {
+      alert('Oops! You do not have 4 items in cart.');
+      return;
+    } 
+    else {
+      const setRandomItem = [cart[Math.floor(Math.random() * cart.length)]];
+      setCart(setRandomItem);
+    }
   }
 
   return (
@@ -44,6 +62,7 @@ const Shop = () => {
         <Cart 
           cart={cart}
           deleteItem={deleteItem}
+          getRandomItem={getRandomItem}
         ></Cart>
       </div>
       <Footer></Footer>

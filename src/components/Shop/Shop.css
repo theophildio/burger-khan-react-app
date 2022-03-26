@@ -25,3 +25,15 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .burger-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+}

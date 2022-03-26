@@ -3,7 +3,7 @@ import CartItem from '../CartItem/CartItem';
 import './Cart.css';
 
 const Cart = (props) => {
-  const {cart, deleteItem} = props;
+  const {cart, deleteItem, getRandomItem} = props;
   return (
     <div>
       <div className="cart">
@@ -18,7 +18,7 @@ const Cart = (props) => {
           ></CartItem>)
         }
         <div className="cart-btns">
-          <button className='cart-btn'>Choose favorit</button>
+          <button onClick={getRandomItem} className='cart-btn'>Choose favorit</button>
           <button onClick={deleteItem} className='cart-btn'>Choose again</button>
         </div>
       </div>

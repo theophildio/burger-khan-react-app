@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRemove } from '@fortawesome/free-solid-svg-icons';
 import './CartItem.css'
 
 const CartItem = (props) => {
