@@ -35,5 +35,6 @@
   .burger-items {
     grid-template-columns: 1fr;
     gap: 20px;
+    order: 1;
 }
 }
