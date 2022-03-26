@@ -1,0 +1,48 @@
+.cart {
+  background-color: rgb(240, 240, 240);
+  position: sticky;
+  top: 0;
+  border-radius: 8px;
+  min-height: 50vh;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.warning {
+  color: #f84444;
+}
+
+.warning span {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ff6347;
+  text-shadow: 1px 1px rgb(54, 54, 54);
+}
+
+.favorit-btn {
+  margin: 8px;
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}
+
+.clear-btn {
+  margin: 8px;
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Product from '../Product/Product';
@@ -21,9 +22,9 @@ const Shop = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='shop'>
       <Header></Header>
-      <div className="main">
+      <div className="container main">
         <div className="burger-items">
           {
             products.map(product => <Product
@@ -33,9 +34,7 @@ const Shop = () => {
             ></Product>)
           }
         </div>
-        <div className="cart">
-          <h2>Cart:{cart.length}</h2>
-        </div>
+        <Cart cart={cart.length}></Cart>
       </div>
       <Footer></Footer>
     </div>

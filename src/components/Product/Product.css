@@ -5,11 +5,12 @@
 }
 .product-img img {
   width: 100%;
-  height: 340px;
+  height: 240px;
   border-radius: 8px 8px 0 0;
 }
 
 .product-details {
+  margin-top: 15px;
   text-align: left;
 }
 
@@ -22,6 +23,13 @@
   border-radius: 8px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+.product-btn p {
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .product-btn:hover {
