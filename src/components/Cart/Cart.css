@@ -3,12 +3,13 @@
   position: sticky;
   top: 0;
   border-radius: 8px;
-  min-height: 50vh;
+  min-height: 155px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .warning {
+  text-align: center;
   color: #f84444;
 }
 
@@ -19,22 +20,13 @@
   text-shadow: 1px 1px rgb(54, 54, 54);
 }
 
-.favorit-btn {
-  margin: 8px;
-  background-color: #ff6347;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 15px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  position: absolute;
-  bottom: 8px;
-  left: 0;
+.cart-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.clear-btn {
-  margin: 8px;
+.cart-btn {
   background-color: #ff6347;
   color: #ffffff;
   border: none;
@@ -42,7 +34,4 @@
   padding: 8px 15px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  position: absolute;
-  bottom: 8px;
-  right: 0;
 }

@@ -1,15 +1,26 @@
 import React from 'react';
+import CartItem from '../CartItem/CartItem';
 import './Cart.css';
 
 const Cart = (props) => {
-  
+  const {cart} = props;
   return (
     <div>
       <div className="cart">
-        <h5 className='warning'>You can order only one <span>burger</span> at a time!!</h5>
-        <h2>Cart:{props.cart}</h2>
-        <button className='favorit-btn'>Choose favorit</button>
-        <button className='clear-btn'>Choose again</button>
+        <h5 className='warning'>Can choose max 4 items but the order will be <span>1 burger</span>!!</h5>
+        <p>Selected Burger: {cart.length}</p>
+        {
+          cart.map(item => <CartItem 
+            key={item.id}
+            itemImg={item.picture}
+            itemName={item.name}
+            itemPrice={item.price}
+          ></CartItem>)
+        }
+        <div className="cart-btns">
+          <button className='cart-btn'>Choose favorit</button>
+          <button className='cart-btn'>Choose again</button>
+        </div>
       </div>
     </div>
   );
