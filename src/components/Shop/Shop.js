@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Article from '../Article/Article';
 import Cart from '../Cart/Cart';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -65,6 +66,7 @@ const Shop = () => {
           getRandomItem={getRandomItem}
         ></Cart>
       </div>
+      <Article></Article>
       <Footer></Footer>
     </div>
   );

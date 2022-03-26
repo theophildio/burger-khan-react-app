@@ -1,0 +1,12 @@
+.article-container {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.article {
+  margin: 20px 0;
+}
+
+.article h3 {
+  margin-bottom: 10px;
+}
