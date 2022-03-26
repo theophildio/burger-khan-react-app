@@ -15,9 +15,17 @@ const Shop = () => {
     .then(data => setProducts(data))
   }, []);
 
-  const handleAddToCart = (product) => {
-    const newCart = [...cart, product];
+  const handleAddToCart = product => {
+    const itemAddedCart = cart.filter(addItem => addItem !== product)
+    const newCart = [...itemAddedCart, product];
+    if (newCart.length > 4) {
+      alert('Sorry! You have added 4 Burgers already.');
+      return
+    }
     setCart(newCart);
+  }
+  const deleteItem = () => {
+    setCart([]);
   }
 
   return (
@@ -35,6 +43,7 @@ const Shop = () => {
         </div>
         <Cart 
           cart={cart}
+          deleteItem={deleteItem}
         ></Cart>
       </div>
       <Footer></Footer>
