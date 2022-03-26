@@ -19,7 +19,7 @@ const Cart = (props) => {
         }
         <div className="cart-btns">
           <button onClick={getRandomItem} className='cart-btn'>Choose favorit</button>
-          <button onClick={deleteItem} className='cart-btn'>Choose again</button>
+          <button onClick={deleteItem} className='cart-btn'>Reset</button>
         </div>
       </div>
     </div>

@@ -17,13 +17,20 @@ const Shop = () => {
   }, []);
 
   const handleAddToCart = product => {
-    const itemAddedCart = cart.filter(addItem => addItem !== product)
+    const itemAddedCart = cart.filter(addItem => addItem !== product);
+    const duplicateItem = cart.find(addedItem => addedItem.id === product.id );
     const newCart = [...itemAddedCart, product];
-    if (newCart.length > 4) {
-      alert('Sorry! You have added 4 items already.');
-      return
+    if (duplicateItem) {
+      alert('Oops! This item is already added.');
+      return;
     }
-    setCart(newCart);
+    else if (newCart.length > 4) {
+      alert('Sorry! You have added 4 items already.');
+      return;
+    }
+    else {
+      setCart(newCart);
+    }
   }
 
   const deleteItem = () => {
